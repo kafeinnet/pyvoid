@@ -8,7 +8,18 @@ import os
 from pyvoid.headset import Headset
 
 def exit_help(ret_code = 2):
-    print('pyvoidd [-h] [-v] [-s path]')
+    print('Usage:  pyvoidd [OPTION] [CMD]')
+    print('A simple set of client/daemon scripts to control a Corsair VOID headset.')
+    print('\nOptions:')
+    print('%-28s specify socket path' % '  -s, --socket')
+    print('%-28s print additional information' % '  -v, --verbose')
+    print('%-28s display this help and exit' % '  -h, --help')
+    print('\nCommands:')
+    print('%-28s return the percentage of battery' % '  get_battery_level')
+    print('%-28s activate Dolby Surround 7.1' % '  set_dolby_on')
+    print('%-28s deactivate Dolby Surround 7.1' % '  set_dolby_off')
+    print('%-28s activate the RGB lights' % '  set_light_on')
+    print('%-28s deactivate the RGB lights' % '  set_light_off')
     sys.exit(ret_code)
 
 def main():
