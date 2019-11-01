@@ -3,10 +3,15 @@
 PyVOID is a simple client/daemon scripts to control a Corsair VOID headset.
 
 ## Installation
-
+Without pip:
 ```
 python3 setup.py install
 ```
+With pip:
+```
+python3 -m pip install .
+```
+(You can use pip to uninstall it after being installed either way, with `python3 -m pip uninstall pyvoid`)
 
 ## Usage
 
